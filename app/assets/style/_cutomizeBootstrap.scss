@@ -1,5 +1,5 @@
-
-
+$font-family-base: "Montserrat", sans-serif;
+$font-family-code: "Roboto", sans-serif;
 // custom variables
 $primary: #000;
 $light: #fbf5e5;
@@ -8,23 +8,28 @@ $light: #fbf5e5;
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/utilities";
-
 
 $custom-theme-colors: (
   "altlight": #f2ebfa,
   "altdark": #522192,
 );
 
-$utillities: map-merge(
-    $utilities, (
-
-    ));
-
+$custom-font-sizes: (
+  "h1": 70px,
+  "h2": 48px,
+  "h3": 36px,
+  "h4": 28px,
+  "h5": 20px,
+  "h6": 30px,
+);
 
 $theme-colors: map-merge(
-    $map1: $custom-theme-colors,
-    $map2: $theme-colors,
+  $map1: $custom-theme-colors,
+  $map2: $theme-colors,
+);
+$font-sizes: map-merge(
+    $map1: $custom-font-sizes,
+    $map2: $font-sizes,
   );
   // import bootstrap
   @import "node_modules/bootstrap/scss/bootstrap";
